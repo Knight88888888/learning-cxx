@@ -14,7 +14,10 @@ class Fibonacci {
 
 public:
     // TODO: 实现构造器
-    Fibonacci Fibonacci = {0,1};
+    Fibonacci() : cached(2) {  
+        cache[0] = 0;
+        cache[1] = 1; 
+    }
     // Fibonacci()
 
     // TODO: 实现正确的缓存优化斐波那契计算
